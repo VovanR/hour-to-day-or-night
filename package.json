@@ -1,6 +1,6 @@
 {
   "name": "hour-to-day-or-night",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert hour to day or night: 8 → 'day'",
   "license": "MIT",
   "repository": "VovanR/hour-to-day-or-night",
