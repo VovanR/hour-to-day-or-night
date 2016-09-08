@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>hour-to-day-or-night</title>
+    <meta name="description" content="Convert hour to day or night: 8 → 'day'">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="converter">
+
+<div class="converter__input">
+	<input
+		class="converter__control converter__control_name_input"
+		value=""
+		min="0"
+		max="23"
+		type="number"
+		placeholder="hour"
+		/>
+</div>
+
+<div class="converter__output">
+	<input
+		class="converter__control converter__control_name_result"
+		value=""
+		readonly
+		type="text"
+		placeholder="result"
+		/>
+</div>
+
+<a class="repo" href="https://github.com/vovanr/hour-to-day-or-night">MIT&nbsp;©&nbsp;<span>Vladimir Rodkin</span></a>
+
+<script>window.module = {}</script>
+<script src="index.js"></script>
+<script>
+(function (hourToDayOrNight) {
+	'use strict'
+
+	var inputControl = document.querySelector('.converter__control_name_input')
+	var resultControl = document.querySelector('.converter__control_name_result')
+
+	inputControl.value = new Date().getHours()
+	inputControl.addEventListener('input', renderResult)
+
+	function renderResult() {
+		var val = hourToDayOrNight(inputControl.value)
+		resultControl.value = val
+	}
+
+	renderResult()
+
+})(window.module.exports)
+</script>
+
+</body>
+</html>

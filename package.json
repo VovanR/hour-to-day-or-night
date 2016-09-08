@@ -1,0 +1,54 @@
+{
+  "name": "hour-to-day-or-night",
+  "version": "0.0.1",
+  "description": "Convert hour to day or night: 8 → 'day'",
+  "license": "MIT",
+  "repository": "VovanR/hour-to-day-or-night",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "prepush": "npm test",
+    "test": "xo && nyc ava",
+    "tdd": "ava -w",
+    "release-patch": "mversion patch",
+    "release-minor": "mversion minor",
+    "release-major": "mversion major",
+    "deploy": "gh-pages-deploy"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "fromat",
+    "separate",
+    "thousands",
+    "number"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "coveralls": "^2.11.12",
+    "cz-conventional-changelog": "^1.2.0",
+    "husky": "^0.11.7",
+    "mversion": "^1.10.1",
+    "nyc": "^8.1.0",
+    "xo": "^0.16.0"
+  },
+  "bugs": {
+    "url": "https://github.com/VovanR/hour-to-day-or-night/issues"
+  },
+  "homepage": "https://github.com/VovanR/hour-to-day-or-night#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "gh-pages-deploy": {
+    "staticpath": "example",
+    "noprompt": false
+  }
+}
