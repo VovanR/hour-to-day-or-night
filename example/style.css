@@ -7,6 +7,15 @@
     position: absolute;
     text-align: center;
     width: 100%;
+	transition: background-color ease 0.15s;
+}
+
+.converter.day {
+	background-color: #ffd403;
+}
+
+.converter.night {
+	background-color: #0b34fd;
 }
 
 .converter__input {
@@ -24,7 +33,7 @@
 	font-size: 500%;
 	text-align: center;
 	padding: 1%;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.75);
 	border: 2px solid #fff;
 	transition: border ease 0.15s;
 	outline: none;
@@ -41,7 +50,7 @@
 
 .converter__control_name_result {
 	width: 100%;
-	background-color: #fbfbfb;
+	background-color: rgba(232, 232, 232, 0.75);
 }
 
 /* repository */

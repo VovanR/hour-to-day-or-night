@@ -41,15 +41,24 @@
 (function (hourToDayOrNight) {
 	'use strict'
 
+	var converterBlock = document.querySelector('.converter')
 	var inputControl = document.querySelector('.converter__control_name_input')
 	var resultControl = document.querySelector('.converter__control_name_result')
 
+	var previousTheme
 	inputControl.value = new Date().getHours()
 	inputControl.addEventListener('input', renderResult)
 
 	function renderResult() {
 		var val = hourToDayOrNight(inputControl.value)
 		resultControl.value = val
+		if (!converterBlock.classList.contains(val)) {
+			converterBlock.classList.add(val)
+		}
+		if (previousTheme !== val) {
+			converterBlock.classList.remove(previousTheme)
+			previousTheme = val
+		}
 	}
 
 	renderResult()
