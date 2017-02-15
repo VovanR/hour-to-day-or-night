@@ -46,18 +46,29 @@
 	background-color: rgba(232, 232, 232, 0.75);
 }
 
-/* repository */
-.repo {
-	position: absolute;
+
+.copyright {
+	position: fixed;
 	right: 0;
 	bottom: 0;
+	opacity: 0.4;
+	font-family: monospace;
+	transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 	font-size: 100%;
 	padding: 1em;
 	text-decoration: none;
-	opacity: 0.4;
 	color: #000;
+	white-space: nowrap;
 }
 
-.repo span {
+.copyright:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+.copyright__license {
+}
+
+.copyright__author {
 	text-decoration: underline;
 }
