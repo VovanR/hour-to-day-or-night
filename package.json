@@ -22,10 +22,10 @@
   ],
   "main": "index.js",
   "keywords": [
-    "fromat",
-    "separate",
-    "thousands",
-    "number"
+    "convert",
+    "hour",
+    "day",
+    "night"
   ],
   "dependencies": {},
   "devDependencies": {
