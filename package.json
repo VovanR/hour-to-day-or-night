@@ -4,7 +4,7 @@
   "description": "Convert hour to day or night: 8 → 'day'",
   "license": "MIT",
   "repository": "VovanR/hour-to-day-or-night",
-  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "engines": {
     "node": ">=0.10.0"
   },
