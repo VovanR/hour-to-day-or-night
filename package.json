@@ -6,7 +6,7 @@
   "repository": "VovanR/hour-to-day-or-night",
   "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "prepush": "npm test",
