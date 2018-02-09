@@ -2,8 +2,8 @@ var DAY = 'day';
 var NIGHT = 'night';
 
 /**
- * @param {number|string} hour
- * @return {string} day or night
+ * @param {number} hour from 0 to 24
+ * @return {string} 'day' or 'night'
  *
  * @example
  * hourToDayOrNight(8);
@@ -13,8 +13,12 @@ var NIGHT = 'night';
  * //=> 'night'
  */
 function hourToDayOrNight(hour) {
-	if ((!hour && hour !== 0) || hour > 24) {
-		return '';
+	if (typeof hour !== 'number' || isNaN(hour)) {
+		throw new TypeError('Expected `hour` type to be a `number`');
+	}
+
+	if (hour < 0 || hour > 24) {
+		throw new RangeError('Expected `hour` to be a number between 0 and 24');
 	}
 
 	if (hour >= 18) {

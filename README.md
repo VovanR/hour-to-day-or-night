@@ -29,15 +29,6 @@ hourToDayOrNight(8);
 
 hourToDayOrNight(19);
 //=> 'night'
-
-hourToDayOrNight(17.9);
-//=> 'day'
-
-hourToDayOrNight('5.9');
-//=> 'night'
-
-hourToDayOrNight();
-//=> ''
 ```
 
 ## License
