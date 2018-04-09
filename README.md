@@ -1,5 +1,8 @@
 # hour-to-day-or-night
 
+<img align="right" width="120" height="120"
+     src="./logo.svg" alt="Hour to Day or Night logo">
+
 [![Commitizen friendly][commitizen-image]][commitizen-url]
 [![XO code style][codestyle-image]][codestyle-url]
 
