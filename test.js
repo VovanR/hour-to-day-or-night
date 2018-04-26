@@ -38,10 +38,10 @@ test('should throw `TypeError` with wrong argument types', t => {
 
 test('should throw `RangeError` with argument value > 24 hours', t => {
 	const error = t.throws(() => fn(25), RangeError);
-	t.is(error.message, 'Expected `hour` to be a number between 0 and 24');
+	t.is(error.message, 'Expected `hour` to be a number from 0 to 23');
 });
 
 test('should throw `RangeError` with argument value < 0 hours', t => {
 	const error = t.throws(() => fn(-1), RangeError);
-	t.is(error.message, 'Expected `hour` to be a number between 0 and 24');
+	t.is(error.message, 'Expected `hour` to be a number from 0 to 23');
 });
