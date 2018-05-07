@@ -25,7 +25,9 @@ function hourToDayOrNight(hour) {
 
 	if (hour >= 18) {
 		return NIGHT;
-	} else if (hour >= 6) {
+	}
+
+	if (hour >= 6) {
 		return DAY;
 	}
 

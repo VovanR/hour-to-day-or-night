@@ -1,5 +1,5 @@
 import test from 'ava';
-import fn from './';
+import fn from '.';
 
 const spec = {
 	day: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
