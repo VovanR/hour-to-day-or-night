@@ -34,6 +34,18 @@ hourToDayOrNight(19);
 //=> 'night'
 ```
 
+## API
+
+### hourToDayOrNight(hour)
+
+Returns `day` or `night`.
+
+#### hour
+
+Type: `number`
+
+From `0` to `23`.
+
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
