@@ -36,8 +36,8 @@ test('should throw `TypeError` with wrong argument types', t => {
 	[NaN, [], {}, '3'].forEach(arg => t.throws(() => fn(arg), TypeError));
 });
 
-test('should throw `RangeError` with argument value > 24 hours', t => {
-	const error = t.throws(() => fn(25), RangeError);
+test('should throw `RangeError` with argument value > 23 hours', t => {
+	const error = t.throws(() => fn(24), RangeError);
 	t.is(error.message, 'Expected `hour` to be a number from 0 to 23');
 });
 
