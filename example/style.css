@@ -1,12 +1,12 @@
 .converter {
 	display: flex;
-    height: 100%;
-    justify-content: center;
+	height: 100%;
+	justify-content: center;
 	flex-direction: column;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
 	background-color: #fff;
 	transition: background-color ease 0.25s;
 }
