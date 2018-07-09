@@ -1,0 +1,24 @@
+.converter.night {
+	background-color: #000;
+}
+
+.converter.night .converter__control {
+	color: #fff;
+	border-color: rgba(255, 255, 255, 0.15)
+}
+
+.converter.night .converter__control:focus {
+	border-color: rgba(255, 51, 4, 0.75);
+}
+
+.converter.night .converter__control_name_input {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.converter.night .converter__control_name_result {
+	background-color: rgba(232, 232, 232, 0.2);
+}
+
+.converter.night .copyright {
+	color: #fff;
+}

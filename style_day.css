@@ -1,0 +1,24 @@
+.converter.day {
+	background-color: #fff;
+}
+
+.converter.day .converter__control {
+	color: #333;
+	border-color: rgba(255, 255, 255, 0.15)
+}
+
+.converter.day .converter__control:focus {
+	border-color: rgba(255, 51, 4, 0.75);
+}
+
+.converter.day .converter__control_name_input {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.converter.day .converter__control_name_result {
+	background-color: rgba(232, 232, 232, 0.15);
+}
+
+.converter.day .copyright {
+	color: #333;
+}
